@@ -1,30 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Parth Chauhan - Backend Developer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parth Chauhan | Backend Developer</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    font-family: Arial;
+}
+.hero{
+    padding:100px 0;
+    background:#f8f9fa;
+    text-align:center;
+}
+.project-card{
+    transition:0.3s;
+}
+.project-card:hover{
+    transform:translateY(-5px);
+}
+</style>
+
 </head>
+
 <body>
 
-<h1>Parth Chauhan</h1>
-<p>Backend Developer (Laravel, PHP, MySQL)</p>
+<!-- Navbar -->
 
-<h2>Skills</h2>
-<ul>
-<li>Laravel</li>
-<li>PHP</li>
-<li>MySQL</li>
-<li>REST API</li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="#">Parth Chauhan</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 </ul>
+</div>
 
-<h2>Projects</h2>
-<ul>
-<li>Laravel REST API</li>
-<li>Subscription Management Systemmmm</li>
-<li>Admin Dashboard Backend</li>
-</ul>
+</div>
+</nav>
 
-<h2>GitHub</h2>
-<p>github.com/yourusername</p>
+<!-- Hero -->
+
+<section class="hero">
+<div class="container">
+
+<h1 class="display-4">Backend Developer</h1>
+<p class="lead">Laravel • PHP • MySQL • REST API</p>
+
+<a href="https://github.com/ParthChauhan11" class="btn btn-dark mt-3">
+View GitHub
+</a>
+
+</div>
+</section>
+
+<!-- About -->
+
+<section id="about" class="py-5">
+<div class="container">
+
+<h2 class="mb-4">About Me</h2>
+
+<p>
+I am a backend developer specializing in Laravel and API development.
+I build scalable server-side systems, authentication services, and
+database-driven applications.
+</p>
+
+</div>
+</section>
+
+<!-- Skills -->
+
+<section id="skills" class="py-5 bg-light">
+<div class="container">
+
+<h2 class="mb-4">Skills</h2>
+
+<div class="row">
+
+<div class="col-md-3">Laravel</div>
+<div class="col-md-3">PHP</div>
+<div class="col-md-3">MySQL</div>
+<div class="col-md-3">REST API</div>
+<div class="col-md-3">Redis</div>
+<div class="col-md-3">Git</div>
+<div class="col-md-3">Node.js</div>
+<div class="col-md-3">Linux</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- Projects -->
+
+<section id="projects" class="py-5">
+<div class="container">
+
+<h2 class="mb-4">Projects</h2>
+
+<div class="row">
+
+<div class="col-md-4 mb-4">
+<div class="card project-card">
+<div class="card-body">
+<h5 class="card-title">Laravel REST API</h5>
+<p>Authentication and user management API.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card project-card">
+<div class="card-body">
+<h5 class="card-title">Subscription System</h5>
+<p>Backend system for managing subscriptions.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card project-card">
+<div class="card-body">
+<h5 class="card-title">Admin Panel Backend</h5>
+<p>Role-based admin management API.</p>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="py-5 bg-light">
+<div class="container">
+
+<h2 class="mb-4">Contact</h2>
+
+<p>Email: your@email.com</p>
+<p>GitHub: github.com/ParthChauhan11</p>
+
+</div>
+</section>
+
+<footer class="bg-dark text-white text-center p-3">
+© 2026 Parth Chauhan
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
