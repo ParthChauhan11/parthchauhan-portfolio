@@ -1,578 +1,509 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        
-        <!-- Site Title -->
-        <title>Parth - Personal Portfolio</title>
-
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="apple-touch-icon" href="assets/images/favicon.png">
-        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
-
-        <!-- CSS here -->
-        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome-pro.min.css">
-        <link rel="stylesheet" href="assets/css/flaticon_gerold.css">
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <link rel="stylesheet" href="assets/css/backToTop.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/swiper.min.css">
-        <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- Icon CSS -->
+        <link rel="stylesheet" href="assets/css/remixicon.css">
+        <!--  CSS files -->
+        <link rel="stylesheet" href="assets/css/swiper.css">
+        <link rel="stylesheet" href="assets/css/magnific.css">
+        <link rel="stylesheet" href="assets/css/citrus-shine.css">
         <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/light-mode.css">
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
     <body>
-        <!-- preloader start -->
-        <div class="preloader">
-            <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-                <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-            </svg>
-            <div class="preloader-heading">
-                <div class="load-text">
-                    <span>L</span>
-                    <span>o</span>
-                    <span>a</span>
-                    <span>d</span>
-                    <span>i</span>
-                    <span>n</span>
-                    <span>g</span>
+        <!-- <div class="preloader">
+            <div class="percent-display"></div>
+            <div class="loading">Loading...</div>
+        </div> -->
+        <main>
+            <div class="wrapper row">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-            </div>
-        </div>
-        <!-- preloader end -->
-
-        <!-- back to top -->
-        <div class="progress-wrap" id="scrollUp">
-            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-            </svg>
-        </div>
-        <!-- back to top -->
-
-        <!-- HEADER START -->
-        <header class="tj-header-area header-absolute">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex flex-wrap align-items-center">
-                        <div class="logo-box">
-                            <a href="index.html">
-                                <img src="assets/images/logo.png" alt="">
-                            </a>
-                        </div>
-                        <div class="header-info-list d-none d-md-inline-block">
-                            <ul class="ul-reset">
-                                <li><a href="mailto:developer.parth1106@gmail.com">developer.parth1106@gmail.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-menu" id="headerMenu">
-                            <nav>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="pages/about.html">About</a></li>
-                                    <li><a href="pages/services.html">Services</a></li>
-                                    <li><a href="pages/portfolio.html">Portfolios</a></li>
-                                    <!-- <li class="has-dropdown">
-                                        <a href="blog.html">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <li><a href="pages/contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="mobile-menu d-lg-none"></div>
-                        <div class="header-button">
-                            <!-- <a href="#" class="btn tj-btn-primary">Hire me!</a> -->
-                        </div>
-                        <div class="menu-bar d-lg-none">
-                            <button>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            </button>
-                        </div>
-                    </div>
+                <div class="icon-bar">
+                    <a href="#home"><span>home</span><i class="ri-home-3-line"></i></a>
+                    <a href="#resume"><span>resume</span><i class="ri-align-center"></i></a>
+                    <a href="#services"><span>services</span> <i class="ri-briefcase-2-line"></i></a>
+                    <a href="#skills"><span>skills</span> <i class="ri-shapes-line"></i></a>
+                    <!-- <a href="#portfolio"><span>projects</span> <i class="ri-macbook-line"></i></a> -->
+                    <a href="#comments"><span>testimonials</span><i class="ri-message-2-line"></i></a>
+                    <a href="#contact"><span>contact</span> <i class="ri-mail-send-line"></i></a>
                 </div>
-            </div>
-        </header>
-        <header class="tj-header-area header-2 header-sticky sticky-out">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex flex-wrap align-items-center">
-                        <div class="logo-box">
-                            <a href="index.html">
-                                <img src="assets/images/logo.png" alt="">
-                            </a>
-                        </div>
-                        <div class="header-info-list d-none d-md-inline-block">
-                            <ul class="ul-reset">
-                                <li><a href="mailto:developer.parth1106@gmail.com">developer.parth1106@gmail.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-menu">
-                            <nav>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="pages/about.html">About</a></li>
-                                    <li><a href="pages/services.html">Services</a></li>
-                                    <li><a href="pages/portfolio.html">Portfolios</a></li>
-                                    <!-- <li class="has-dropdown">
-                                        <a href="blog.html">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <li><a href="pages/contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="mobile-menu d-lg-none"></div>
-                        <div class="header-button">
-                            <!-- <a href="#" class="btn tj-btn-primary">Hire me!</a> -->
-                        </div>
-                        <div class="menu-bar d-lg-none">
-                            <button>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- HEADER END -->
-
-        <main class="site-content" id="content">
-            <!-- hero section -->
-            <section class="hero-section d-flex align-items-center" id="intro">
-                <div class="intro_text">
-                    <svg viewBox="0 0 1320 300">
-                        <text x="50%" y="50%" text-anchor="middle">HI</text>
-                    </svg>
-                </div>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="hero-content-box">
-                                <span class="hero-sub-title">I am Parth</span>
-                                <h1 class="hero-title"> Next-Level Web <br> Developer.</h1>
-                                <div class="hero-image-box d-md-none text-center">
-                                    <img src="assets/images/me.png" alt="">
-                                </div>
-                                <p class="lead">I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
-                                <div class="button-box d-flex flex-wrap align-items-center">
-                                    <a href="https://drive.google.com/file/d/1unZyE3h0KnocmmgkIBV7WCaTlsE_j05u/view?usp=drive_link" target="_blank" class="btn tj-btn-secondary">Download CV <i class="fa-solid fa-download"></i></a>
-                                    <a href="https://www.linkedin.com/in/parth-chauhan-56915a211" target="_blank" class="btn tj-btn-secondary">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
-                                    <ul class="ul-reset social-icons">
-                                        <!-- <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li> -->
-                                        <!-- <li><a href="#"><i class="fa-light fa-basketball"></i></a></li> -->
-                                        <!-- <li><a href="https://www.linkedin.com/in/parth-chauhan-56915a211" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li> -->
-                                        <!-- <li><a href="#"><i class="fa-brands fa-github"></i></a></li> -->
-                                    </ul>
-                                </div>
+                <div class="profile-box-wrap col-12 offset-md-1 col-md-10 offset-lg-0 col-lg-3">
+                    <div class="profile-box glass-effect">
+                        <div class="profile-box-inner">
+                            <div class="profile-image">
+                                <img src="assets/images/profile.jpg" alt="profile">
                             </div>
-                        </div>
-                        <div class="col-md-6 d-none d-md-block">
-                            <div class="hero-image-box text-center">
-                                <img src="assets/images/me.png" alt="">
+                            <div class="profile-info">
+                                <h5 class="mt-1" style="letter-spacing: 2px; font-weight: 500; font-size: 40px;">Parth Chauhan</h5>
+                                <p class="body-three mt-16">Web developer &<br>Backend developer</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="funfact-area">
-                        <div class="row">
-                            <div class="col-6 col-lg-3">
-                                <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
-                                    <div class="number"><span class="odometer" data-count="3.5">0</span></div>
-                                    <div class="text">Years of <br>Experience</div>
-                                </div>
+                            <div class="social-links mt-32">
+                                <a href="#"><i class="ri-facebook-fill"></i></a>
+                                <a href="#"><i class="ri-twitter-x-line"></i></a>
+                                <a href="#"><i class="ri-instagram-line"></i></a>
+                                <a href="#"><i class="ri-dribbble-line"></i></a>
+                            </div>
+                            <div class="email-info mt-20">
+                                <a href="mailto:developer.parth1106@gmail.com">
+                                    <h6>developer.parth1106@gmail.com</h6>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- hero section end -->
-
-            <!-- services section start -->
-            <section class="services-section" id="services-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-header text-center">
-                                <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">My Quality Services</h2>
-                                <p class="wow fadeInUp" data-wow-delay=".4s">
-                                    We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.
-                                </p>
+                <div class="content-side  col-12 offset-md-1 col-md-10 offset-lg-4 col-lg-7">
+                    <section class="hero-section" id="home">
+                        <div class="eyebrow-badge fade-up-anime">
+                            <span>HELLO</span>
+                        </div>
+                        <h1 class="text-anime"><span>Powering Business Growth</span> <br><span>Through Scalable</span><br><span class="color">Web Solutions</span> </h1>
+                        <h4 class="text-anime color"><span class="color">3.5+ Years of Experience</span></h4>
+                        <p class="mt-32 text-anime">
+                            Turning complex problems into clean, scalable solutions.
+                            <br>
+                            Building backend systems and web applications that perform, scale, and last.
+                        </p>
+                        <!-- <p class="mt-32 text-anime">
+                            I specialize in designing and building scalable backend systems and robust web applications by breaking down complex problems into efficient, maintainable solutions. With a strong focus on performance, data integrity, and clean architecture, I develop systems that are reliable, secure, and built to handle real-world scale.
+                        </p> -->
+                        <!-- <p class="mt-32 text-anime">
+                            As a backend and web developer, I work across APIs, databases, and server-side logic to ensure seamless communication between systems and smooth user experiences on the front end. I prioritize writing clean, well-structured code and creating solutions that are not only functional but also easy to scale and maintain.
+                        </p> -->
+                        <!-- <p class="mt-32 text-anime">
+                            My goal is to build technology that powers meaningful user experiences—systems that operate efficiently behind the scenes while supporting applications that can connect and serve millions of users.
+                        </p> -->
+                        <div class="buttons-holder fade-up-anime mt-64">
+                            <a class="visiblo-btn-color" href="#"><span>3.5+ Years of Experience</span></a>
+                            <a class="visiblo-btn-arrow" href="https://www.linkedin.com/in/parth-chauhan-56915a211" target="_blank"><span>LinkedIn</span></a>
+                            <a class="visiblo-btn-arrow" href="https://drive.google.com/file/d/1unZyE3h0KnocmmgkIBV7WCaTlsE_j05u/view?usp=drive_link" target="_blank"><span>Download Cv</span></a>
+                        </div>
+                    </section>
+                    <!-- About Section -->
+                    <section class="about-section" id="about">
+                        <!-- About Badge -->
+                        <div class="eyebrow-badge fade-up-anime">
+                            <span>ABOUT</span>
+                        </div>
+                        <!-- Main Title -->
+                        <div class="about-title">
+                            <h2 class="about-title-secondary text-anime"><span>My Journey & </span> <span class="color">Vision</span></h2>
+                        </div>
+                        <!-- About Content -->
+                        <div class="about-content mt-32">
+                            <p class="about-paragraph text-anime">Hi, I’m a Backend and Web Developer passionate about building efficient, scalable, and reliable digital solutions. With a strong interest in how systems work behind the scenes, I focus on turning complex ideas into structured, high-performing applications.</p>
+                            <br>
+                            <p class="about-paragraph text-anime">
+                                Over time, I’ve worked on a variety of projects, developing APIs, handling databases, and creating full-stack solutions that power seamless user experiences. Whether it’s optimizing performance, designing clean architecture, or solving challenging problems, I believe in writing quality code and continuously evolving with modern technologies.
+                            </p>
+                        </div>
+                    </section>
+                    <!-- Resume Section -->
+                    <section class="resume-section" id="resume">
+                        <!-- Resume Badge -->
+                        <div class="eyebrow-badge fade-up-anime">
+                            <span>RESUME</span>
+                        </div>
+                        <!-- Main Title -->
+                        <div class="main-title">
+                            <h2 class="title-primary text-anime"><span>Creative Thinker</span> <br> <span class="color">Problem Solver, System Builder</span></h2>
+                        </div>
+                        <!-- Work Experience Section -->
+                        <div class="work-experience mt-32">
+                            <div class="experience-item fade-up-anime row">
+                                <div class="job-title col-md-4">Freelance Work</div>
+                                <div class="company-name col-md-4">#</div>
+                                <div class="work-dates col-md-4">April 2025 – Present</div>
+                            </div>
+                            <div class="experience-divider"></div>
+                            <div class="experience-item fade-up-anime row">
+                                <div class="job-title col-md-4">Web & Backend Developer</div>
+                                <div class="company-name col-md-4">Freebird App Studio LLP</div>
+                                <div class="work-dates col-md-4">November 2022 – Present</div>
+                            </div>
+                            <div class="experience-divider"></div>
+                            <div class="experience-item fade-up-anime row">
+                                <div class="job-title col-md-4">Trainee</div>
+                                <div class="company-name col-md-4">Freebird App Studio LLP</div>
+                                <div class="work-dates col-md-4">April 2022 – October 2022</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="services-widget position-relative">
-                                <div class="service-item current d-flex flex-wrap align-items-center wow fadeInUp" data-wow-delay=".5s">
-                                    <div class="left-box d-flex flex-wrap align-items-center">
-                                        <span class="number">01</span>
-                                        <h3 class="service-title">Responsive Design</h3>
-                                    </div>
-                                    <div class="right-box">
-                                        <p>Ensure your website looks great on any device, with layouts that adapt to different screen sizes seamlessly.</p>
-                                    </div>
-                                    <!-- <i class="flaticon-up-right-arrow"></i> -->
-                                    <!-- <button data-mfp-src="#service-wrapper" class="service-link modal-popup"></button> -->
+                    </section>
+                    <!-- Services Section -->
+                    <section class="services-section" id="services">
+                        <!-- Services Badge -->
+                        <div class="eyebrow-badge fade-up-anime">
+                            <span>SERVICES</span>
+                        </div>
+                        <!-- Main Title -->
+                        <div class="services-title">
+                            <h2 class="services-title-primary text-anime"><span>Building Solutions That</span><br><span class="color">Scale With Your Business</span></h2>
+                        </div>
+                        <!-- Services Accordion -->
+                        <div class="services-accordion mt-32">
+                            <div class="accordion-item fade-up-anime">
+                                <div class="accordion-header">
+                                    <span class="service-name">Backend Development</span>
+                                    <span class="accordion-arrow"><i class="ri-arrow-right-down-line"></i></span>
                                 </div>
-                                <div class="service-item d-flex flex-wrap align-items-center wow fadeInUp" data-wow-delay=".6s">
-                                    <div class="left-box d-flex flex-wrap align-items-center">
-                                        <span class="number">02</span>
-                                        <h3 class="service-title">CMS Development</h3>
-                                    </div>
-                                    <div class="right-box">
-                                        <p>Set up user-friendly CMS solutions like WordPress or custom-built options so clients can manage content easily.</p>
-                                    </div>
-                                    <!-- <i class="flaticon-up-right-arrow"></i> -->
-                                    <!-- <button data-mfp-src="#service-wrapper" class="service-link modal-popup"></button> -->
+                                <div class="accordion-content">
+                                    <p>Develop secure and scalable server-side applications using modern frameworks like Laravel. Focus on clean architecture, efficient data processing, and reliable system performance to support robust web applications.</p>
                                 </div>
-                                <div class="service-item d-flex flex-wrap align-items-center wow fadeInUp" data-wow-delay=".7s">
-                                    <div class="left-box d-flex flex-wrap align-items-center">
-                                        <span class="number">03</span>
-                                        <h3 class="service-title">API Integrations</h3>
-                                    </div>
-                                    <div class="right-box">
-                                        <p>Build and integrate APIs to connect websites with third-party applications, enhancing functionality and performance.</p>
-                                    </div>
-                                    <!-- <i class="flaticon-up-right-arrow"></i> -->
-                                    <!-- <button data-mfp-src="#service-wrapper" class="service-link modal-popup"></button> -->
+                            </div>
+                            <div class="accordion-divider"></div>
+                            <div class="accordion-item fade-up-anime">
+                                <div class="accordion-header">
+                                    <span class="service-name">API Development & Integration</span>
+                                    <span class="accordion-arrow"><i class="ri-arrow-right-down-line"></i></span>
                                 </div>
-                                <div class="service-item d-flex flex-wrap align-items-center wow fadeInUp" data-wow-delay=".8s">
-                                    <div class="left-box d-flex flex-wrap align-items-center">
-                                        <span class="number">04</span>
-                                        <h3 class="service-title">Website Redesign</h3>
-                                    </div>
-                                    <div class="right-box">
-                                        <p>Refresh outdated websites with modern, appealing designs that align with current brand goals and user expectations.</p>
-                                    </div>
-                                    <!-- <i class="flaticon-up-right-arrow"></i> -->
-                                    <!-- <button data-mfp-src="#service-wrapper" class="service-link modal-popup"></button> -->
+                                <div class="accordion-content">
+                                    <p>Design and develop RESTful APIs that enable seamless communication between web applications, mobile apps, and third-party services. Ensure secure authentication and efficient data exchange.</p>
                                 </div>
-                                <div class="active-bg wow fadeInUp" data-wow-delay=".5s"></div>
+                            </div>
+                            <div class="accordion-divider"></div>
+                            <div class="accordion-item fade-up-anime">
+                                <div class="accordion-header">
+                                    <span class="service-name">Web Application Development</span>
+                                    <span class="accordion-arrow"><i class="ri-arrow-right-down-line"></i></span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Build dynamic, responsive, and user-friendly web applications tailored to business needs. Implement modern development practices to deliver fast, secure, and scalable solutions.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-divider"></div>
+                            <div class="accordion-item fade-up-anime">
+                                <div class="accordion-header">
+                                    <span class="service-name">Database Design & Optimization</span>
+                                    <span class="accordion-arrow"><i class="ri-arrow-right-down-line"></i></span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Design efficient database structures that ensure data integrity and smooth data management. Optimize queries and indexing to improve application speed and performance.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-divider"></div>
+                            <div class="accordion-item fade-up-anime">
+                                <div class="accordion-header">
+                                    <span class="service-name">Bug Fixing & Performance Optimization</span>
+                                    <span class="accordion-arrow"><i class="ri-arrow-right-down-line"></i></span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Identify and resolve issues in existing applications to improve stability and functionality. Optimize code and system performance to deliver faster and smoother user experiences.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-divider"></div>
+                            <div class="accordion-item fade-up-anime">
+                                <div class="accordion-header">
+                                    <span class="service-name">Server Setup & Deployment</span>
+                                    <span class="accordion-arrow"><i class="ri-arrow-right-down-line"></i></span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Configure and deploy web applications on VPS or cloud servers with proper environment setup and security practices. Ensure smooth deployment and stable hosting environments.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-divider"></div>
+                            <div class="accordion-item fade-up-anime">
+                                <div class="accordion-header">
+                                    <span class="service-name">Custom Backend Solutions</span>
+                                    <span class="accordion-arrow"><i class="ri-arrow-right-down-line"></i></span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Develop customized backend systems based on specific project requirements. Build scalable architectures that can support complex business logic and growing user bases.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-divider"></div>
+                            <div class="accordion-item fade-up-anime">
+                                <div class="accordion-header">
+                                    <span class="service-name">Secure Application Development</span>
+                                    <span class="accordion-arrow"><i class="ri-arrow-right-down-line"></i></span>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Implement security best practices including authentication, authorization, and data protection. Ensure applications are protected against common vulnerabilities and threats.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
+                    <!-- Skills Section -->
+                    <section class="skills-section" id="skills">
+                        <!-- Skills Badge -->
+                        <div class="eyebrow-badge fade-up-anime">
+                            <span>SKILLS</span>
+                        </div>
+                        <!-- Main Title -->
+                        <div class="skills-title text-anime">
+                            <h2 class="skills-title-main"><span>My </span> <span class="color">Superpowers</span></h2>
+                        </div>
+                        <!-- Skills Grid -->
+                        <div class="skills-grid mt-64 row">
+                            <!-- First Row -->
+                            <div class="skill-card-wrapper col-md-4 col-6 col-lg-3 fade-up-anime">
+                                <div class="skill-card">
+                                    <div class="skill-icon">
+                                        <!-- Laravel SVG will be placed here -->
+                                        <img src="assets/images/skills/laravel.svg" alt="Laravel">
+                                    </div>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <span class="skill-name">Laravel</span>
+                            </div>
+                            <div class="skill-card-wrapper col-md-4 col-6 col-lg-3 fade-up-anime">
+                                <div class="skill-card">
+                                    <div class="skill-icon">
+                                        <!-- Laravel SVG will be placed here -->
+                                        <img src="assets/images/skills/nodejs.svg" alt="Node.js">
+                                    </div>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                            <div class="skill-card-wrapper col-md-4 col-6 col-lg-3 fade-up-anime">
+                                <div class="skill-card">
+                                    <div class="skill-icon">
+                                        <!-- Laravel SVG will be placed here -->
+                                        <img src="assets/images/skills/mysql.svg" alt="MySQL">
+                                    </div>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <span class="skill-name">MySQL</span>
+                            </div>
+                            <div class="skill-card-wrapper col-md-4 col-6 col-lg-3 fade-up-anime">
+                                <div class="skill-card">
+                                    <div class="skill-icon">
+                                        <!-- Laravel SVG will be placed here -->
+                                        <img src="assets/images/skills/mongodb.svg" alt="MongoDB">
+                                    </div>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <span class="skill-name">MongoDB</span>
+                            </div>
+                            <div class="skill-card-wrapper col-md-4 col-6 col-lg-3 fade-up-anime">
+                                <div class="skill-card">
+                                    <div class="skill-icon">
+                                        <!-- Laravel SVG will be placed here -->
+                                        <img src="assets/images/skills/socketio.svg" alt="Socket.IO">
+                                    </div>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <span class="skill-name">Socket.Io</span>
+                            </div>
+                            <div class="skill-card-wrapper col-md-4 col-6 col-lg-3 fade-up-anime">
+                                <div class="skill-card">
+                                    <div class="skill-icon">
+                                        <!-- React SVG will be placed here -->
+                                        <img src="assets/images/skills/react.svg" alt="React">
+                                    </div>
+                                    <span class="skill-percentage">50%</span>
+                                </div>
+                                <span class="skill-name">React</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Comments Section -->
+                    <section class="comments" id="comments">
+                        <div class="eyebrow-badge fade-up-anime">
+                            <span>COMMENTS</span>
+                        </div>
+                        <h2 class="text-anime"><span>What the People Saying</span><br><span class="color">About Me</span></h2>
+                        <!-- Swiper -->
+                        <div class="swiper commentSlider mt-32 fade-up-anime">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="comment-box">
+                                        <p class="xs">“Miles understands that shipping matters. He cuts through complexity, explains options clearly, and takes full responsibility for outcomes, not just tasks.”</p>
+                                        <span class="mt-32">Kevin Lawson</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comment-box">
+                                        <p class="xs">“You always know where things stand with Miles. No fluff, no over-engineering — just clear decisions, solid execution, and consistent results.”</p>
+                                        <span class="mt-32">Alex Turner</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comment-box">
+                                        <p class="xs">“Miles understands that shipping matters. He cuts through complexity, explains options clearly, and takes full responsibility for outcomes, not just tasks.”</p>
+                                        <span class="mt-32">Sarah Mitchell</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comment-box">
+                                        <p class="xs">“With Miles, there’s no hand-holding. He owns his work, communicates risks early, and delivers without excuses. Simple, professional, and effective.”</p>
+                                        <span class="mt-32">Laura Chen</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comment-box">
+                                        <p class="xs">“Miles works like someone who cares about the end result. Clear communication, firm decisions, and consistent delivery. Exactly what you want in a senior developer.”</p>
+                                        <span class="mt-32">Ethan Morris</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comment-box">
+                                        <p class="xs">“Instead of asking endless questions, Miles comes with answers. He understands the constraints, makes informed decisions, and takes full responsibility for the outcome.”</p>
+                                        <span class="mt-32">Sophie Reynolds</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comment-box">
+                                        <p class="xs">“Miles doesn’t overcomplicate problems to look smart. He makes practical decisions, explains them clearly, and delivers work that actually ships. That mindset is invaluable.”</p>
+                                        <span class="mt-32">Mark Stevens</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comment-box">
+                                        <p class="xs">“We worked with several developers before, but Miles stood out immediately. Reliable, disciplined, and extremely focused on outcomes. Once he commits to a deadline, he hits it.”</p>
+                                        <span class="mt-32">Oliver Grant</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row logos g-5 mt-64">
+                            <div class="col-md-3 logo fade-up-anime"><img src="assets/images/logo-1.png" alt="client"></div>
+                            <div class="col-md-3 logo fade-up-anime"><img src="assets/images/logo-5.png" alt="client"></div>
+                            <div class="col-md-3 logo fade-up-anime"><img src="assets/images/logo-3.png" alt="client"></div>
+                            <div class="col-md-3 logo fade-up-anime"><img src="assets/images/logo-4.png" alt="client"></div>
+                        </div> -->
+                    </section>
+                    <!-- Contact Section -->
+                    <section class="contact-section" id="contact">
+                        <!-- Contact Badge -->
+                        <div class="eyebrow-badge fade-up-anime">
+                            <span>CONTACT</span>
+                        </div>
+                        <!-- Main Title -->
+                        <div class="contact-title">
+                            <h2><span>Any questions?</span><br><span class="color">I'm all ears.</span></h2>
+                        </div>
+                        <!-- Contact Info Cards -->
+                        <div class="contact-cards">
+                            <!-- Contact Details Card -->
+                            <div class="contact-card">
+                                <p class="xl text-anime">Contact Details</p>
+                                <div class="contact-info mt-16">
+                                    <p class="contact-item text-anime">developer.parth1106@gmail.com</p>
+                                    <p class="contact-item text-anime">+91 95105 91326</p>
+                                </div>
+                            </div>
+                            <!-- Address Card -->
+                            <!-- <div class="contact-card">
+                                <p class="text-anime xl">Address</p>
+                                <div class="contact-info mt-16">
+                                    <p class="contact-item text-anime">1245 Sunset Boulevard,</p>
+                                    <p class="contact-item text-anime">Los Angeles, CA 90026</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <!-- Contact Form -->
+                        <div class="contact-form-wrapper ">
+                            <form class="contact-form" action="#" method="POST">
+                                <div class="form-row">
+                                    <div class="form-group fade-up-anime">
+                                        <label for="name" class="form-label">NAME</label>
+                                        <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required="">
+                                    </div>
+                                    <div class="form-group fade-up-anime">
+                                        <label for="email" class="form-label">EMAIL</label>
+                                        <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required="">
+                                    </div>
+                                    <div class="form-group fade-up-anime">
+                                        <label for="website" class="form-label">WEBSITE (OPTIONAL)</label>
+                                        <input type="url" id="website" name="website" class="form-input" placeholder="Company Website">
+                                    </div>
+                                    <div class="form-group fade-up-anime">
+                                        <label for="website" class="form-label">MESSAGE</label>
+                                        <textarea id="message" name="message" class="form-textarea" placeholder="Your Message" rows="5" required=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-submit">
+                                    <button type="submit" class="visiblo-btn-color">Send It!</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
                 </div>
-            </section>
-            <!-- services section end -->
-
-            <!-- resume section start -->
-            <section class="resume-section" id="resume-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="section-header wow fadeInUp" data-wow-delay=".3s">
-                                <h2 class="section-title"><i class="flaticon-recommendation"></i> My Experience</h2>
-                            </div>
-                            <div class="resume-widget">
-                                <div class="resume-item wow fadeInLeft" data-wow-delay=".4s">
-                                    <div class="time">Nov 2022 - Present</div>
-                                    <h3 class="resume-title">Web & Backend Developer</h3>
-                                    <div class="institute">Freebird App Studio LLP</div>
-                                </div>
-                                <div class="resume-item wow fadeInLeft" data-wow-delay=".5s">
-                                    <div class="time">Apr 2022 - Nov 2022</div>
-                                    <h3 class="resume-title">Web & Backend Trainee</h3>
-                                    <div class="institute">Freebird App Studio LLP</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="section-header wow fadeInUp" data-wow-delay=".4s">
-                                <h2 class="section-title"><i class="flaticon-graduation-cap"></i> My Education</h2>
-                            </div>
-                            <div class="resume-widget">
-                                <div class="resume-item wow fadeInRight" data-wow-delay=".5s">
-                                    <div class="time">2020-2022</div>
-                                    <h3 class="resume-title">Engineering in Information Technology</h3>
-                                    <div class="institute">Government Eng College, Rajkot</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- resume section end -->
-
-            <!-- skills section start -->
-            <section class="skills-section" id="skills-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-header text-center">
-                                <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">My Skills</h2>
-                                <p class="wow fadeInUp" data-wow-delay=".4s">
-                                    We put your ideas and thus your wishes in the form of a unique web project that inspires you andyou customers.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="skills-widget d-flex flex-wrap justify-content-center align-items-center">
-                                <div class="skill-item wow fadeInUp" data-wow-delay=".7s">
-                                    <div class="skill-inner">
-                                        <div class="icon-box">
-                                            <img src="assets/images/skills/laravel.svg" alt="">
-                                        </div>
-                                        <div class="number">85%</div>
-                                    </div>
-                                    <p>Laravel</p>
-                                </div>
-                                <div class="skill-item wow fadeInUp" data-wow-delay=".7s">
-                                    <div class="skill-inner">
-                                        <div class="icon-box">
-                                            <img src="assets/images/skills/node.js.svg" alt="">
-                                        </div>
-                                        <div class="number">80%</div>
-                                    </div>
-                                    <p>NodeJS</p>
-                                </div>
-                                <div class="skill-item wow fadeInUp" data-wow-delay=".7s">
-                                    <div class="skill-inner">
-                                        <div class="icon-box">
-                                            <img src="assets/images/skills/mysql.svg" alt="">
-                                        </div>
-                                        <div class="number">70%</div>
-                                    </div>
-                                    <p>MySQL</p>
-                                </div>
-                                <div class="skill-item wow fadeInUp" data-wow-delay=".3s">
-                                    <div class="skill-inner">
-                                        <div class="icon-box">
-                                            <img src="assets/images/skills/mongodb.svg" alt="">
-                                        </div>
-                                        <div class="number">55%</div>
-                                    </div>
-                                    <p>MongoDB</p>
-                                </div>
-                                <div class="skill-item wow fadeInUp" data-wow-delay=".5s">
-                                    <div class="skill-inner">
-                                        <div class="icon-box">
-                                            <img src="assets/images/skills/skills-3.svg" alt="">
-                                        </div>
-                                        <div class="number">85%</div>
-                                    </div>
-                                    <p>Javascript</p>
-                                </div>
-                                <div class="skill-item wow fadeInUp" data-wow-delay=".7s">
-                                    <div class="skill-inner">
-                                        <div class="icon-box">
-                                            <img src="assets/images/skills/react.svg" alt="">
-                                        </div>
-                                        <div class="number">50%</div>
-                                    </div>
-                                    <p>ReactJS</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- skills section end -->
-
-            <!-- contact section start -->
-            <section class="contact-section" id="contact-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-7 order-2 order-md-1">
-                            <div class="contact-form-box wow fadeInLeft" data-wow-delay=".3s">
-                                <div class="section-header">
-                                    <h2 class="section-title">Let’s work together!</h2>
-                                    <p>I design and code beautifully simple things and i love what i do. Just simple like that!</p>
-                                </div>
-                                <div class="tj-contact-form">
-                                    <form id="contact-form">
-                                        <div class="row gx-3">
-                                            <div class="col-sm-6">
-                                                <div class="form_group">
-                                                    <input type="text" name="conName" id="conName" placeholder="First name" autocomplete="off">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form_group">
-                                                    <input type="text" name="conLName" id="conLName" placeholder="Last name" autocomplete="off">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form_group">
-                                                    <input type="email" name="conEmail" id="conEmail" placeholder="Email address" autocomplete="off">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form_group">
-                                                    <input type="tel" name="conPhone" id="conPhone" placeholder="Phone number" autocomplete="off">
-                                                </div>
-                                            </div>
-                                            <!-- <div class="col-12">
-                                                <div class="form_group">
-                                                    <select name="conService" id="conService" class="tj-nice-select">
-                                                        <option value="" selected="" disabled="">Choose Service</option>
-                                                        <option value="braning">Branding Design</option>
-                                                        <option value="web">Web Design</option>
-                                                        <option value="uxui">UI/UX Design</option>
-                                                        <option value="app">App Design</option>
-                                                    </select>
-                                                </div>
-                                            </div> -->
-                                            <div class="col-12">
-                                                <div class="form_group">
-                                                    <textarea name="conMessage" id="conMessage" placeholder="Message"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form_btn">
-                                                    <button type="submit" class="btn tj-btn-primary">Send Message</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 offset-lg-1 col-md-5 d-flex flex-wrap align-items-center order-1 order-md-2">
-                            <div class="contact-info-list">
-                                <ul class="ul-reset">
-                                    <li class="d-flex flex-wrap align-items-center position-relative wow fadeInRight" data-wow-delay=".4s">
-                                        <div class="icon-box">
-                                            <i class="flaticon-phone-call"></i>
-                                        </div>
-                                        <div class="text-box">
-                                            <p>Phone</p>
-                                            <a href="tel:0123456789">+91 9510591326</a>
-                                        </div>
-                                    </li>
-                                    <li class="d-flex flex-wrap align-items-center position-relative wow fadeInRight" data-wow-delay=".5s">
-                                        <div class="icon-box">
-                                            <i class="flaticon-mail-inbox-app"></i>
-                                        </div>
-                                        <div class="text-box">
-                                            <p>Email</p>
-                                            <a href="mailto:mail@mail.com">developer.parth1106@gmail.com</a>
-                                        </div>
-                                    </li>
-                                    <li class="d-flex flex-wrap align-items-center position-relative wow fadeInRight" data-wow-delay=".6s">
-                                        <div class="icon-box">
-                                            <i class="flaticon-location"></i>
-                                        </div>
-                                        <div class="text-box">
-                                            <p>Address</p>
-                                            <a href="#">Freelance, <br>Anywhere, Anytime</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- contact section end -->
-
-            <!-- contact form success modal message -->
-            <div class="modal contact_modal" id="message_sent" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <span class="modal-title"><strong>Message Sent Successfully</strong></span>
-                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Thank you for contacting us. We will get back to you shortly.<br>Have a great day!</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-                        </div>
+                <div class="sidebar">
+                    <div class="right-bar">
+                        <p class="xl">Menu</p>
+                        <ul class="mt-64">
+                            <li>
+                                <a href="#home">
+                                    <i class="ri-home-3-line"></i>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about">
+                                    <i class="ri-user-3-line"></i>
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#resume">
+                                    <i class="ri-align-center"></i>
+                                    <span>Resume</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#services">
+                                    <i class="ri-briefcase-2-line"></i>
+                                    <span>Services</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#skills">
+                                    <i class="ri-shapes-line"></i>
+                                    <span>Skills</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#comments">
+                                    <i class="ri-message-2-line"></i>
+                                    <span>Testimonials</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact">
+                                    <i class="ri-mail-send-line"></i>
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- contact form success Modal message -->
-
-            <!-- contact form fail modal message -->
-            <div class="modal contact_modal failed" id="message_fail" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <span class="modal-title"><strong>Error</strong></span>
-                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Oops! Something went wrong, please try again.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="video-wrapper" style="opacity:.3; left:0%;">
+                <video class="hero-video" autoplay="" muted="" loop="" playsinline="">
+                    <source src="assets/media/coding.mp4" type="video/mp4">
+                </video>
             </div>
-            <!-- contact form fail modal message -->
         </main>
-
-        <!-- FOOTER AREA START -->
-        <footer class="tj-footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="footer-logo-box">
-                            <a href="#"><img src="assets/images/logo.png" alt=""></a>
-                        </div>
-                        <div class="footer-menu">
-                            <nav>
-                                <ul>
-                                    <li><a href="pages/about.html">About</a></li>
-                                    <li><a href="pages/services.html">Services</a></li>
-                                    <li><a href="pages/portfolio.html">Portfolios</a></li>
-                                    <li><a href="pages/contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="copy-text">
-                            <p>© <span id="year"></span> All rights reserved <a href="#" target="_blank"></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- FOOTER AREA END -->
-
-        <!-- JS here -->
+        <!-- SVG FILTER DEFINITION -->
+        <!-- SVG Filter for Glass Distortion -->
+        <svg>
+            <defs>
+                <filter id="refractionFilter">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.006" numOctaves="10" result="turbulence"></feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="170"></feDisplacementMap>
+                </filter>
+            </defs>
+        </svg>
+        <!-- JavaScript files -->
         <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/swiper.js"></script>
+        <script src="assets/js/magnific.js"></script>
+        <script src="assets/js/split-text.min.js"></script>
         <script src="assets/js/gsap.min.js"></script>
-        <script src="assets/js/gsap-scroll-to-plugin.min.js"></script>
-        <script src="assets/js/gsap-scroll-trigger.min.js"></script>
-        <script src="assets/js/gsap-split-text.min.js"></script>
-        <script src="assets/js/lenis.min.js"></script>
-        <script src="assets/js/nice-select.min.js"></script>
-        <script src="assets/js/backToTop.js"></script>
-        <script src="assets/js/appear.min.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/lightcase.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/swiper.min.js"></script>
-        <script src="assets/js/imagesloaded-pkgd.js"></script>
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-        <script src="assets/js/odometer.min.js"></script>
-        <script src="assets/js/magnific-popup.js"></script>
-        <script src="assets/js/validate.min.js"></script>
-        <script src="assets/js/meanmenu.js"></script>
+        <script src="assets/js/scroll-trigger.min.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
